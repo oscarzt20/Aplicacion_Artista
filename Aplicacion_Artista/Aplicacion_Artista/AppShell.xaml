@@ -22,5 +22,28 @@
 
     </Shell.FlyoutBackdrop>
 
+    <FlyoutItem Title="Home" >
+        <ShellContent Title="Home"
+                  ContentTemplate="{DataTemplate pages:MainPage}" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Biografia">
+        <ShellContent Title="Biografia"
+              ContentTemplate="{DataTemplate pages:Biografia}" />
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Discografía" >
+        <ShellContent Title="Discografía"
+                  ContentTemplate="{DataTemplate pages:Discografía}" />
+    </FlyoutItem>
+
+
+
+    <FlyoutItem Title="Giras y presentaciones" >
+        <ShellContent Title="Giras y presentaciones"
+              ContentTemplate="{DataTemplate pages:Giras_Presentaciones}" />
+    </FlyoutItem>
+
 
 </Shell>

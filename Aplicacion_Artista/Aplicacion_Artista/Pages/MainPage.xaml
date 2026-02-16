@@ -4,10 +4,9 @@
              x:Class="Aplicacion_Artista.Pages.MainPage">
 
     <ScrollView>
-        <Grid 
-RowSpacing="15"
-ColumnSpacing="15"
-Padding="15">
+        <Grid RowSpacing="15"
+              ColumnSpacing="15"
+              Padding="15">
             <Grid.ColumnDefinitions>
 
                 <ColumnDefinition Width="*" />
@@ -31,29 +30,22 @@ Padding="15">
                 StrokeShape="RoundRectangle 20, 20, 20, 20"
                 Padding="12">
 
-                <VerticalStackLayout>
-                    <Label Text="ADO" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
-                </VerticalStackLayout>
+                <Grid HeightRequest="500">
+                    <Image Source="https://gamerstyle.com.mx/wp-content/uploads/2024/10/Ado-Arena-CDMX-2025.jpg"
+                           Aspect="AspectFill"/>
+                    <BoxView Color="#60000000" />
+
+                    <BoxView Color="#80000000" />
+                    <Label Text="ADO" 
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                       TextColor="White"
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"/>
+                </Grid>
             </Border>
 
-            <Border 
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                StrokeShape="RoundRectangle 20, 20, 20, 20"
-                Padding="12">
-
-                <VerticalStackLayout>
-                    <Image Source="https://otakusenvenezuela.wordpress.com/wp-content/uploads/2024/11/ado17.jpg"
-                           WidthRequest="300"/>
-                </VerticalStackLayout>
-            </Border>
-
-
-
-
-
-
+           
 
         </Grid>
 

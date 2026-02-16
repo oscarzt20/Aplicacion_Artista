@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.DiscografiaDetail"
-             Title="DiscografiaDetail">
+             Title="DiscografiaDetail"
+             BackgroundColor="#1a1a2e">
     <VerticalStackLayout>
         <Image x:Name="albumImage" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center"/>
         <Label x:Name="albumLabel" FontSize="24" HorizontalOptions="Center"/>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Aplicacion_Artista.Models"
+             x:Class="Aplicacion_Artista.Pages.Eventos"
+             Title="Giras y Presentaciones"
+             BackgroundColor="#1a1a2e">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="20">
+
+            <Label Text="Tours Mundiales" 
+                   TextColor="#00d2ff" 
+                   FontAttributes="Bold" 
+                   FontSize="20" />
+
+            <CollectionView x:Name="ListaTours"
+                            SelectionMode="Single"
+                            SelectionChanged="OnSelectionChanged"
+                            HeightRequest="320">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="12"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Evento">
+                        <Border StrokeShape="RoundRectangle 12" 
+                                StrokeThickness="2" 
+                                BackgroundColor="#16213e" 
+                                Padding="10">
+                            <Grid ColumnDefinitions="110, *">
+                                <Image Grid.Column="0" 
+                                       Source="{Binding Imagen}" 
+                                       Aspect="AspectFill" 
+                                       HeightRequest="90" 
+                                       WidthRequest="110"/>
+                                <VerticalStackLayout Grid.Column="1" 
+                                                     Padding="15,0,0,0" 
+                                                     VerticalOptions="Center" 
+                                                     Spacing="5">
+                                    <Label Text="{Binding Nombre}" 
+                                           TextColor="White" 
+                                           FontAttributes="Bold" 
+                                           FontSize="16"/>
+                                    <Label Text="{Binding Anio}" 
+                                           TextColor="#00d2ff" 
+                                           FontSize="14"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label Text="Eventos Especiales" 
+                   TextColor="#00d2ff" 
+                   FontAttributes="Bold" 
+                   FontSize="20" 
+                   Margin="0,10,0,0"/>
+
+            <CollectionView x:Name="ListaEventos"
+                            SelectionMode="Single"
+                            SelectionChanged="OnSelectionChanged"
+                            HeightRequest="320">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="12"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Evento">
+                        <Border StrokeShape="RoundRectangle 12" 
+                                StrokeThickness="2" 
+                                BackgroundColor="#16213e" 
+                                Padding="10">
+                            <Grid ColumnDefinitions="110, *">
+                                <Image Grid.Column="0" 
+                                       Source="{Binding Imagen}" 
+                                       Aspect="AspectFill" 
+                                       HeightRequest="90" 
+                                       WidthRequest="110"/>
+                                <VerticalStackLayout Grid.Column="1" 
+                                                     Padding="15,0,0,0" 
+                                                     VerticalOptions="Center" 
+                                                     Spacing="5">
+                                    <Label Text="{Binding Nombre}" 
+                                           TextColor="White" 
+                                           FontAttributes="Bold" 
+                                           FontSize="16"/>
+                                    <Label Text="{Binding Anio}" 
+                                           TextColor="#00d2ff" 
+                                           FontSize="14"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

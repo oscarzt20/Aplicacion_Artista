@@ -4,11 +4,42 @@
              x:Class="Aplicacion_Artista.Pages.DiscografiaDetail"
              Title="DiscografiaDetail"
              BackgroundColor="#1a1a2e">
-    <VerticalStackLayout>
-        <Image x:Name="albumImage" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center"/>
-        <Label x:Name="albumLabel" FontSize="24" HorizontalOptions="Center"/>
-        <Label x:Name="añoLabel" FontSize="24" HorizontalOptions="Center"/>
-        <Label x:Name="descripcionLabel" FontSize="24" HorizontalOptions="Center"/>
+    <VerticalStackLayout Spacing="20" Padding="20">
+
+        <Border StrokeShape="RoundRectangle 15" 
+            StrokeThickness="0" 
+            BackgroundColor="Transparent">
+            <Image x:Name="albumImage" 
+               Aspect="AspectFill" 
+               HeightRequest="250" 
+               WidthRequest="400" />
+        </Border>
+
+        <VerticalStackLayout Spacing="5">
+            <Label x:Name="albumLabel" 
+               TextColor="White" 
+               FontSize="26" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center" 
+               HorizontalTextAlignment="Center"/>
+
+            <Label x:Name="añoLabel" 
+               TextColor="#00d2ff" 
+               FontSize="18" 
+               HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <BoxView HeightRequest="1" Color="#3b5266" Margin="0,10" />
+
+        <Label Text="Detalle:" 
+           TextColor="#00d2ff" 
+           FontSize="18" 
+           FontAttributes="Bold"/>
+
+        <Label x:Name="descripcionLabel" 
+           TextColor="#e0e0e0" 
+           FontSize="16" 
+           LineHeight="1.2" />
 
     </VerticalStackLayout>
 </ContentPage>

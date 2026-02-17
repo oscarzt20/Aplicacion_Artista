@@ -3,71 +3,85 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Discografía"
              Title="Discografía"
-             BackgroundColor="#1a1a2e">
-    <Grid RowSpacing="15"
-          ColumnSpacing="15"
-          Padding="15">
-        <Grid.ColumnDefinitions>
-
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-
-        </Grid.ColumnDefinitions>
-
+             BackgroundColor="#1a2634">
+    <Grid RowSpacing="0" Padding="20" BackgroundColor="#1a2634">
         <Grid.RowDefinitions>
-
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border 
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                StrokeShape="RoundRectangle 20, 20, 20, 20"
-                Padding="12">
+        <VerticalStackLayout Grid.Row="0" Margin="0,0,0,20">
+            <Label Text="DISCOGRAFÍA" 
+               TextColor="#00d2ff" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               CharacterSpacing="2" 
+               HorizontalOptions="Center"/>
+            <BoxView HeightRequest="3" 
+                 WidthRequest="500" 
+                 Color="#00d2ff" 
+                 HorizontalOptions="Center" 
+                 Margin="2,5,0,0"/>
+        </VerticalStackLayout>
 
-            <VerticalStackLayout>
-                <Label Text="Discografias" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
-            </VerticalStackLayout>
-        </Border>
+        <ListView x:Name="discografiasList" 
+              Grid.Row="1"
+              ItemSelected="OnContactSelected"
+              SeparatorVisibility="None" 
+              HasUnevenRows="True"
+              BackgroundColor="Transparent">
 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Border Margin="0,8"
+                            Padding="0"
+                            StrokeThickness="0"
+                            BackgroundColor="#283d4f"
+                            StrokeShape="RoundRectangle 15">
 
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Offset="0,4" Radius="8" Opacity="0.5" />
+                            </Border.Shadow>
 
-        <Border Grid.Row="1" 
-                Grid.ColumnSpan="2" 
-                Padding="12"
-                HorizontalOptions="Center">
-            <ListView x:Name="discografiasList" 
-                      ItemSelected="OnContactSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Border
-                            Margin="5,8"
-                            Padding="10"
-                            StrokeShape="RoundRectangle 15, 15, 15, 15"
-                            BackgroundColor="#283d4f">
+                            <Grid ColumnDefinitions="110, *" HeightRequest="110">
 
-                                <VerticalStackLayout Spacing="15">
+                                <Border Grid.Column="0"
+                                    StrokeShape="RoundRectangle 15,0,15,0"
+                                    StrokeThickness="0">
                                     <Image Source="{Binding imagen}" 
-                                           WidthRequest="60" 
-                                           HeightRequest="60"/>
+                                       Aspect="AspectFill"
+                                       HeightRequest="110"
+                                       WidthRequest="110" />
+                                </Border>
+
+                                <VerticalStackLayout Grid.Column="1" 
+                                                 Padding="15" 
+                                                 VerticalOptions="Center" 
+                                                 Spacing="5">
+
                                     <Label Text="{Binding NombreAlbum}" 
-                                           FontAttributes="Bold" 
-                                           FontSize="16"
-                                           HorizontalOptions="Center"/>
+                                       TextColor="White" 
+                                       FontSize="18" 
+                                       FontAttributes="Bold"
+                                       MaxLines="1"
+                                       LineBreakMode="TailTruncation" />
+
+                                    <Label Text="Álbum de estudio" 
+                                       TextColor="#a0a0a0" 
+                                       FontSize="13" />
+
+                                    <Label Text="Ver detalles →" 
+                                       TextColor="#00d2ff" 
+                                       FontSize="14" 
+                                       FontAttributes="Bold"
+                                       Margin="0,5,0,0" />
                                 </VerticalStackLayout>
-
-                            </Border>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Border>
-
+                            </Grid>
+                        </Border>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </ContentPage>

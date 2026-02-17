@@ -2,11 +2,86 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Discografía"
-             Title="Discografía">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Discografía"
+             BackgroundColor="#1a2634">
+    <Grid RowSpacing="0" Padding="20" BackgroundColor="#1a2634">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="0" Margin="0,0,0,20">
+            <Label Text="DISCOGRAFÍA" 
+               TextColor="#00d2ff" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               CharacterSpacing="2" 
+               HorizontalOptions="Center"/>
+            <BoxView HeightRequest="3" 
+                 WidthRequest="500" 
+                 Color="#00d2ff" 
+                 HorizontalOptions="Center" 
+                 Margin="2,5,0,0"/>
+        </VerticalStackLayout>
+
+        <ListView x:Name="discografiasList" 
+              Grid.Row="1"
+              ItemSelected="OnContactSelected"
+              SeparatorVisibility="None" 
+              HasUnevenRows="True"
+              BackgroundColor="Transparent">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Border Margin="0,8"
+                            Padding="0"
+                            StrokeThickness="0"
+                            BackgroundColor="#283d4f"
+                            StrokeShape="RoundRectangle 15">
+
+                            <Border.Shadow>
+                                <Shadow Brush="Black" Offset="0,4" Radius="8" Opacity="0.5" />
+                            </Border.Shadow>
+
+                            <Grid ColumnDefinitions="110, *" HeightRequest="110">
+
+                                <Border Grid.Column="0"
+                                    StrokeShape="RoundRectangle 15,0,15,0"
+                                    StrokeThickness="0">
+                                    <Image Source="{Binding imagen}" 
+                                       Aspect="AspectFill"
+                                       HeightRequest="110"
+                                       WidthRequest="110" />
+                                </Border>
+
+                                <VerticalStackLayout Grid.Column="1" 
+                                                 Padding="15" 
+                                                 VerticalOptions="Center" 
+                                                 Spacing="5">
+
+                                    <Label Text="{Binding NombreAlbum}" 
+                                       TextColor="White" 
+                                       FontSize="18" 
+                                       FontAttributes="Bold"
+                                       MaxLines="1"
+                                       LineBreakMode="TailTruncation" />
+
+                                    <Label Text="Álbum de estudio" 
+                                       TextColor="#a0a0a0" 
+                                       FontSize="13" />
+
+                                    <Label Text="Ver detalles →" 
+                                       TextColor="#00d2ff" 
+                                       FontSize="14" 
+                                       FontAttributes="Bold"
+                                       Margin="0,5,0,0" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
 </ContentPage>

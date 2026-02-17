@@ -1,64 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Aplicacion_Artista.Pages.MainPage">
+             x:Class="Aplicacion_Artista.Pages.MainPage"
+             BackgroundColor="#1a2634">
 
-    <ScrollView>
-        <Grid 
-RowSpacing="15"
-ColumnSpacing="15"
-Padding="15">
-            <Grid.ColumnDefinitions>
-
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-
-            </Grid.ColumnDefinitions>
+    <ScrollView BackgroundColor="#1a2634">
+        <Grid RowSpacing="20"
+          ColumnSpacing="15"
+          Padding="20">
 
             <Grid.RowDefinitions>
-
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-
             </Grid.RowDefinitions>
 
-            <Border 
-                Grid.Row="0"
+            <Border Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                StrokeShape="RoundRectangle 20, 20, 20, 20"
-                Padding="12">
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 25"
+                HeightRequest="450">
 
-                <VerticalStackLayout>
-                    <Label Text="ADO" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
-                </VerticalStackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="0,10" Radius="15" Opacity="0.6" />
+                </Border.Shadow>
+
+                <Grid>
+                    <Image Source="https://gamerstyle.com.mx/wp-content/uploads/2024/10/Ado-Arena-CDMX-2025.jpg"
+                       Aspect="AspectFill"/>
+
+                    <BoxView Color="#90000000" VerticalOptions="Fill" HorizontalOptions="Fill" />
+
+                    <VerticalStackLayout VerticalOptions="End" 
+                                     Padding="25" 
+                                     Spacing="5">
+
+                        <Label Text="ARTISTA" 
+                           TextColor="#00d2ff" 
+                           FontSize="14" 
+                           FontAttributes="Bold" 
+                           CharacterSpacing="3"/>
+
+                        <Label Text="ADO" 
+                           FontSize="42" 
+                           FontAttributes="Bold" 
+                           TextColor="White"
+                           Margin="0,0,0,10"/>
+
+                    </VerticalStackLayout>
+                </Grid>
             </Border>
-
-            <Border 
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                StrokeShape="RoundRectangle 20, 20, 20, 20"
-                Padding="12">
-
-                <VerticalStackLayout>
-                    <Image Source="https://otakusenvenezuela.wordpress.com/wp-content/uploads/2024/11/ado17.jpg"
-                           WidthRequest="300"/>
-                </VerticalStackLayout>
-            </Border>
-
-
-
-
-
-
 
         </Grid>
-
-
-
     </ScrollView>
 
 </ContentPage>

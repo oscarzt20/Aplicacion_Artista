@@ -4,6 +4,9 @@ namespace Aplicacion_Artista.Pages;
 
 public partial class Discografía : ContentPage
 {
+    /// <summary>
+    /// Ingreso datos a la lista generica que contiene imagen, nombre del album, año y descripcion
+    /// </summary>
     private List<DiscModel> _discografias = [
 
         new()  { imagen = "https://m.media-amazon.com/images/I/61dBDC8tyBL._UF1000,1000_QL80_.jpg", NombreAlbum = "Zanmu", Año = "2024", Descripcion = "\"Zanmu\" es una palabra real que significa \"un sueño incumplido\" o un sueño que persiste incluso después de despertar. es el segundo álbum de estudio de la cantante japonesa Ado, lanzado en julio de 2024. Incluye éxitos como \"Show\" y \"Kura Kura\", destacando por su estilo J-Pop y colaboraciones"},
@@ -13,8 +16,16 @@ public partial class Discografía : ContentPage
 
     ];
 
+
+    /// <summary>
+    /// Creo una lista para filtrar las discografias en caso de busqueda
+    /// </summary>
     private List<DiscModel> _filteredDiscografias;
 
+
+    /// <summary>
+    /// Muestro la lista de discografias en el ListView 
+    /// </summary>
     public Discografía()
 	{
 		InitializeComponent();
@@ -22,6 +33,11 @@ public partial class Discografía : ContentPage
         discografiasList.ItemsSource = _filteredDiscografias;
     }
 
+    /// <summary>
+    /// Asigno un evento para mostrar el detalle del album seleccionado, pasando el objeto completo a la nueva pagina
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private async void OnContactSelected(object sender, SelectedItemChangedEventArgs e)
     {
         if (e.SelectedItem is DiscModel selectedDiscografia)

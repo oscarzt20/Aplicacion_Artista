@@ -3,6 +3,10 @@ using System.Xml;
 
 namespace Aplicacion_Artista.Pages;
 
+
+/// <summary>
+/// Muestra una pagina con el detalle del album seleccionado
+/// </summary>
 [QueryProperty(nameof(DiscModel), "Discografia")]
 
 public partial class DiscografiaDetail : ContentPage
@@ -22,6 +26,9 @@ public partial class DiscografiaDetail : ContentPage
         _discModel = new DiscModel();
     }
 
+    /// <summary>
+    /// Muestra los detalles dependiendo la discografia
+    /// </summary>
     override protected void OnAppearing()
     {
         base.OnAppearing();

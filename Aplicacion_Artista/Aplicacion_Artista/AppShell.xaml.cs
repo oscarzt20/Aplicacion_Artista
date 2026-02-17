@@ -2,6 +2,9 @@
 {
     public partial class AppShell : Shell
     {
+        /// <summary>
+        /// Hace las rutas para navegar entre las paginas
+        /// </summary>
         public AppShell()
         {
             InitializeComponent();

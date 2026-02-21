@@ -5,6 +5,12 @@
     <Color x:Key="PrimaryColor">#00d2ff</Color>
     <Color x:Key="SecundaryColor">#00d2ff</Color>
     <Color x:Key="BackgorundColor">#00d2ff</Color>
-    
-    
+
+    <Style x:Key="TitleLabelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+
 </ResourceDictionary>

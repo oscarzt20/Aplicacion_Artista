@@ -2,32 +2,125 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Biografia"
-             Title="Biografia">
-    <VerticalStackLayout Margin="15">
+             Title="Biografía"
+             BackgroundColor="#1a1a2e">
 
-        <Border Grid.Row="1" Grid.Column="1"
-                StrokeShape="RoundRectangle 20"
-                Padding="12">
-            <StackLayout Orientation="Vertical" Spacing="10">
-                <Label Text="Biografía - ADO"
-                       FontSize="18"
-                       FontAttributes="Bold" />
-                <Label Text="Ado (Tokio; 24 de octubre de 2002) es una cantante japonesa.&#10;&#10;
-                       En 2020, con tan solo 17 años, Ado debutó tempranamente con el sencillo digital;&#10;
-                       titulado Usseewa. La canción pronto alcanzó el puesto número 1 en el Billboard&#10;&#10;
-                       "
-                       LineBreakMode="WordWrap" />
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
 
-            </StackLayout>
-        </Border>
+            <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Border StrokeShape="RoundRectangle 100"
+                        Stroke="#00d2ff"
+                        StrokeThickness="2"
+                        HeightRequest="150"
+                        WidthRequest="150"
+                        HorizontalOptions="Center">
+                    <Image Source="ado_profile.png" 
+                           Aspect="AspectFill"
+                           HeightRequest="147"
+                           WidthRequest="147"/>
+                </Border>
 
-        <Label 
-            Text="BIOGRAFÍA - ADO"
-            FontSize="24"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        
-        
-        
-    </VerticalStackLayout>
+                <Label Text="Ado (アド)"
+                       TextColor="White"
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                <Label Text="La voz de la nueva era"
+                       TextColor="#00d2ff"
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Italic"/>
+            </VerticalStackLayout>
+
+            <Border StrokeShape="RoundRectangle 15"
+                    StrokeThickness="2"
+                    BackgroundColor="#16213e"
+                    Padding="15">
+                <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *" RowSpacing="10">
+                    <VerticalStackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="Debut" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="2020" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Row="0" Grid.Column="1">
+                        <Label Text="Origen" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="Tokio, Japón" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Row="1" Grid.Column="0">
+                        <Label Text="Género" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="J-Pop / Rock" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+                        <Label Text="Sello" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="Virgin Music" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+            <VerticalStackLayout Spacing="8">
+                <Label Text="¿Quién es Ado?" 
+                       TextColor="#00d2ff" 
+                       FontSize="22" 
+                       FontAttributes="Bold"/>
+
+                <Label Text="Ado nació el 24 de octubre de 2002 en Tokio, Japón. Ado es una 'Utaite' (cantante de internet) que oculta su rostro y utiliza un avatar estilo anime para representarse."
+                       TextColor="#e0e0e0"
+                       FontSize="16"
+                       LineHeight="1.3"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Inicios" 
+                       TextColor="#00d2ff" 
+                       FontSize="22" 
+                       FontAttributes="Bold"/>
+
+                <Label Text="En 2014, Ado se interesó por la música después del lanzamiento del sitio web para compartir videos Niconico en Nintendo 3DS. Comenzó a ver videos en la pantalla pequeña de su Nintendo 3DS y acabó impresionada con los cantantes de versiones de Niconico que cantaban sin mostrar su cara."
+                       TextColor="#e0e0e0"
+                       FontSize="16"
+                       LineHeight="1.3"/>
+
+                <Label Text="Años más tarde, en 2017, Ado comenzó a cantar como utaite (una cantante de covers de Internet) en Niconico, luego de subir un vídeo de ella misma cantando una versión de 'Kimi no taion' el 10 de enero de 2017. En Nippon TV contó que durante el tiempo que fue cantante de utaite cubría su armario con material de insonorización que compraba por internet y grababa en él."
+                       TextColor="#e0e0e0"
+                       FontSize="16"
+                       LineHeight="1.3"/>
+
+                <Label Text="En 2019, apareció en el sencillo digital de Kujira 'Kinmokusei', que se lanzó el 23 de diciembre de 2019. Un par de meses después, apareció como vocalista en el sencillo digital 'Shikabanēze' de jon-YAKITORY, que se lanzó el 29 de marzo de 2020. En mayo del 2020 participó en el álbum recopilatorio PALETTE4 de Pony Canyon . Lanzó dos canciones, 'Call boy' de syudou y 'Taema naku ai-iro' de Shishi Shishi, ambas como lanzamientos digitales."
+                       TextColor="#e0e0e0"
+                       FontSize="16"
+                       LineHeight="1.3"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="8">
+                <Label Text="El Fenómeno 'Usseewa'" 
+                       TextColor="#00d2ff" 
+                       FontSize="22" 
+                       FontAttributes="Bold"/>
+
+                <Label Text="En 2020, con tan solo 17 años, Ado debutó tempranamente con el sencillo digital titulado 'Usseewa'. La canción pronto alcanzó el puesto número 1 en el Billboard Japan Hot 100, DO Oricon Digital Singles Chart y Oricon Streaming Chart. El video musical de la canción en su canal de YouTube alcanzó los 100 millones de reproducciones tan solo 148 días después de su lanzamiento. Al alcanzar los 100 millones de reproducciones en Billboard Japan después de tan solo 17 semanas desde su inicio la convirtió en la artista musical más rápida en conseguirlo en la historia y la más joven para una cantante solista. Actualmente pertenece a la empresa de gestión de artistas Cloud Nine."
+                       TextColor="#e0e0e0"
+                       FontSize="16"
+                       LineHeight="1.3"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="8">
+                <Label Text="La Voz de Uta" 
+                       TextColor="#00d2ff" 
+                       FontSize="22" 
+                       FontAttributes="Bold"/>
+
+                <Label Text="En 2022, Ado prestó su voz para las canciones del personaje Uta en la película 'One Piece Film: Red'. El álbum de la banda sonora rompió récords, y la canción 'New Genesis' se convirtió en la primera canción japonesa en alcanzar el número 1 en el Top 100 Global de Apple Music."
+                       TextColor="#e0e0e0"
+                       FontSize="16"
+                       LineHeight="1.3"/>
+            </VerticalStackLayout>
+
+            <BoxView HeightRequest="20" Color="Transparent"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicacion_Artista.Pages.DetalleEvento"
+             Title="Detalle del Evento"
+             BackgroundColor="#1a1a2e">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <Border StrokeShape="RoundRectangle 15" 
+                    StrokeThickness="0" 
+                    BackgroundColor="Transparent">
+                <Image Source="{Binding Imagen}" 
+                       Aspect="AspectFill" 
+                       HeightRequest="250" 
+                       WidthRequest="400" />
+            </Border>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="{Binding Nombre}" 
+                       TextColor="White" 
+                       FontSize="26" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center"/>
+
+                <Label Text="{Binding Anio}" 
+                       TextColor="#00d2ff" 
+                       FontSize="18" 
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <BoxView HeightRequest="1" Color="#3b5266" Margin="0,10" />
+
+            <Label Text="Sobre el evento:" 
+                   TextColor="#00d2ff" 
+                   FontSize="18" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="{Binding Descripcion}" 
+                   TextColor="#e0e0e0" 
+                   FontSize="16" 
+                   LineHeight="1.2" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

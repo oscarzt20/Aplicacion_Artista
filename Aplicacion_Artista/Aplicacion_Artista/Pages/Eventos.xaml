@@ -4,7 +4,7 @@
              xmlns:models="clr-namespace:Aplicacion_Artista.Models"
              x:Class="Aplicacion_Artista.Pages.Eventos"
              Title="Giras y Presentaciones"
-             BackgroundColor="#1a1a2e">
+             BackgroundColor="{DynamicResource PrimaryColor}">
 
     <ScrollView>
         <VerticalStackLayout Padding="15" Spacing="20">

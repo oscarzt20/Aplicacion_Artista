@@ -4,6 +4,5 @@ public partial class MyResources : ResourceDictionary
 {
 	public MyResources()
 	{
-		InitializeComponent();
 	}
 }

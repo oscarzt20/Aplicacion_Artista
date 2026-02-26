@@ -4,7 +4,7 @@
              x:Class="Aplicacion_Artista.Pages.MainPage"
              BackgroundColor="#1a2634">
 
-    <ScrollView BackgroundColor="#1a2634">
+    <ScrollView BackgroundColor="{DynamicResource PrimaryColor}">
         <Grid RowSpacing="20"
           ColumnSpacing="15"
           Padding="20">
@@ -14,7 +14,8 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Switch Grid.Row="0"
+            
+                <Switch Grid.Row="0"
                     HorizontalOptions="End"
                     OnColor="{DynamicResource PrimaryColor}"
                     OffColor="{DynamicResource PrimaryColor}"

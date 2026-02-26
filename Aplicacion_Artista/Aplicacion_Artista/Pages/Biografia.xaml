@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Biografia"
              Title="Biografía"
-             BackgroundColor="#1a1a2e">
+             BackgroundColor="{DynamicResource PrimaryColor}">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25">

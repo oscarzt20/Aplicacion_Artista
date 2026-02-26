@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Discografía"
              Title="Discografía"
-             BackgroundColor="#1a2634">
-    <Grid RowSpacing="0" Padding="20" BackgroundColor="#1a2634">
+             BackgroundColor="{DynamicResource PrimaryColor}">
+    <Grid RowSpacing="0" Padding="20" BackgroundColor="{DynamicResource PrimaryColor}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />

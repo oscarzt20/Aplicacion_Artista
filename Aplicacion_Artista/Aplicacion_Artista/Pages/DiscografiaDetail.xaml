@@ -17,11 +17,7 @@
 
         <VerticalStackLayout Spacing="5">
             <Label x:Name="albumLabel" 
-               TextColor="White" 
-               FontSize="26" 
-               FontAttributes="Bold" 
-               HorizontalOptions="Center" 
-               HorizontalTextAlignment="Center"/>
+               Style="{DynamicResource AlbumTitleStyle}"/>
 
             <Label x:Name="añoLabel" 
                TextColor="#00d2ff" 

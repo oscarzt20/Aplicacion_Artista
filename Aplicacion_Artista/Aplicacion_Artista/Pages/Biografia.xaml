@@ -10,7 +10,7 @@
 
             <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
                 <Border StrokeShape="RoundRectangle 100"
-                        Stroke="#00d2ff"
+                        Stroke="{DynamicResource BackgroundMain}"
                         StrokeThickness="2"
                         HeightRequest="150"
                         WidthRequest="150"
@@ -28,7 +28,7 @@
                        HorizontalTextAlignment="Center"/>
 
                 <Label Text="La voz de la nueva era"
-                       TextColor="#00d2ff"
+                       TextColor="{DynamicResource BackgroundMain}"
                        FontSize="16"
                        HorizontalTextAlignment="Center"
                        FontAttributes="Italic"/>
@@ -40,22 +40,22 @@
                     Padding="15">
                 <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *" RowSpacing="10">
                     <VerticalStackLayout Grid.Row="0" Grid.Column="0">
-                        <Label Text="Debut" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="Debut" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
                         <Label Text="2020" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="0" Grid.Column="1">
-                        <Label Text="Origen" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="Origen" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
                         <Label Text="Tokio, Japón" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="1" Grid.Column="0">
-                        <Label Text="Género" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="Género" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
                         <Label Text="J-Pop / Rock" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="1" Grid.Column="1">
-                        <Label Text="Sello" TextColor="#00d2ff" FontSize="12"/>
+                        <Label Text="Sello" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
                         <Label Text="Virgin Music" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
                 </Grid>

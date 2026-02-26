@@ -26,7 +26,7 @@
                        HorizontalTextAlignment="Center"/>
 
                 <Label Text="{Binding Anio}" 
-                       TextColor="#00d2ff" 
+                       TextColor="{DynamicResource BackgroundMain}" 
                        FontSize="18" 
                        HorizontalOptions="Center" />
             </VerticalStackLayout>
@@ -34,7 +34,7 @@
             <BoxView HeightRequest="1" Color="#3b5266" Margin="0,10" />
 
             <Label Text="Sobre el evento:" 
-                   TextColor="#00d2ff" 
+                   TextColor="{DynamicResource BackgroundMain}" 
                    FontSize="18" 
                    FontAttributes="Bold"/>
 

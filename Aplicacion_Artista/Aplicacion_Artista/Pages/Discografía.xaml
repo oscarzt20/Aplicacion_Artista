@@ -12,14 +12,10 @@
 
         <VerticalStackLayout Grid.Row="0" Margin="0,0,0,20">
             <Label Text="DISCOGRAFÍA" 
-               TextColor="#00d2ff" 
-               FontSize="24" 
-               FontAttributes="Bold" 
-               CharacterSpacing="2" 
-               HorizontalOptions="Center"/>
+               Style="{DynamicResource AlbumTitleStyle}"/>
             <BoxView HeightRequest="3" 
                  WidthRequest="500" 
-                 Color="#00d2ff" 
+                 Color="{DynamicResource BackgroundMain}" 
                  HorizontalOptions="Center" 
                  Margin="2,5,0,0"/>
         </VerticalStackLayout>

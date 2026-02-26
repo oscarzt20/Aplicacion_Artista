@@ -11,7 +11,7 @@
     <!-- Tamaños -->
     <x:Double x:Key="TitleSize">24</x:Double>
     <x:Double x:Key="SubtitleSize">18</x:Double>
-    <x:Double x:Key="TextSize">12</x:Double>
+    <x:Double x:Key="TextSize">16</x:Double>
 
 
     <!-- Estilo reutilizable -->

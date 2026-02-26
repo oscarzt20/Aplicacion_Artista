@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.DetalleEvento"
              Title="Detalle del Evento"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundMain}">
 
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="20">
@@ -26,7 +26,7 @@
                        HorizontalTextAlignment="Center"/>
 
                 <Label Text="{Binding Anio}" 
-                       TextColor="{DynamicResource BackgroundMain}" 
+                       TextColor="{DynamicResource AccentColor}" 
                        FontSize="18" 
                        HorizontalOptions="Center" />
             </VerticalStackLayout>
@@ -34,7 +34,7 @@
             <BoxView HeightRequest="1" Color="#3b5266" Margin="0,10" />
 
             <Label Text="Sobre el evento:" 
-                   TextColor="{DynamicResource BackgroundMain}" 
+                   TextColor="{DynamicResource AccentColor}" 
                    FontSize="18" 
                    FontAttributes="Bold"/>
 

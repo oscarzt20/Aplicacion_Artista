@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Discografía"
              Title="Discografía"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundMain}">
     <Grid RowSpacing="0" Padding="20" BackgroundColor="{DynamicResource PrimaryColor}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -12,10 +12,10 @@
 
         <VerticalStackLayout Grid.Row="0" Margin="0,0,0,20">
             <Label Text="DISCOGRAFÍA" 
-               Style="{DynamicResource AlbumTitleStyle}"/>
+                   Style="{DynamicResource AccentColor}"/>
             <BoxView HeightRequest="3" 
                  WidthRequest="500" 
-                 Color="{DynamicResource BackgroundMain}" 
+                 Color="{DynamicResource AccentColor}" 
                  HorizontalOptions="Center" 
                  Margin="2,5,0,0"/>
         </VerticalStackLayout>

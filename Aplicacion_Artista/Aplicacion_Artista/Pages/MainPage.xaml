@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.MainPage"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundMain}">
 
-    <ScrollView BackgroundColor="{DynamicResource PrimaryColor}">
+    <ScrollView BackgroundColor="{DynamicResource BackgroundMain}">
         <Grid RowSpacing="20"
           ColumnSpacing="15"
           Padding="20">
@@ -17,8 +17,8 @@
             
                 <Switch Grid.Row="0"
                     HorizontalOptions="End"
-                    OnColor="{DynamicResource PrimaryColor}"
-                    OffColor="{DynamicResource PrimaryColor}"
+                    OnColor="{DynamicResource AccentColor}"
+                    OffColor="{DynamicResource AccentColor}"
                     Toggled="OnToggledChanged"
                     VerticalOptions="End" />
 

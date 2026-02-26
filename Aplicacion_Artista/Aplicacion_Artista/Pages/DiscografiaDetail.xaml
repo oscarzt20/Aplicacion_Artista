@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.DiscografiaDetail"
              Title="DiscografiaDetail"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundMain}">
     <VerticalStackLayout Spacing="20" Padding="20">
 
         <Border StrokeShape="RoundRectangle 15" 
@@ -17,7 +17,7 @@
 
         <VerticalStackLayout Spacing="5">
             <Label x:Name="albumLabel" 
-               Style="{DynamicResource AlbumTitleStyle}"/>
+               Style="{DynamicResource AccentColor}"/>
 
             <Label x:Name="añoLabel" 
                TextColor="#00d2ff" 

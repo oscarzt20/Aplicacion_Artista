@@ -4,15 +4,13 @@
              xmlns:models="clr-namespace:Aplicacion_Artista.Models"
              x:Class="Aplicacion_Artista.Pages.Eventos"
              Title="Giras y Presentaciones"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundMain}">
 
     <ScrollView>
         <VerticalStackLayout Padding="15" Spacing="20">
 
             <Label Text="Tours Mundiales" 
-                   TextColor="{DynamicResource BackgroundMain}" 
-                   FontAttributes="Bold" 
-                   FontSize="20" />
+                   Style="{DynamicResource AccentColor}" />
 
             <CollectionView x:Name="ListaTours"
                             SelectionMode="Single"
@@ -42,7 +40,7 @@
                                            FontAttributes="Bold" 
                                            FontSize="16"/>
                                     <Label Text="{Binding Anio}" 
-                                           TextColor="{DynamicResource BackgroundMain}" 
+                                           TextColor="{DynamicResource AccentColor}" 
                                            FontSize="14"/>
                                 </VerticalStackLayout>
                             </Grid>
@@ -52,7 +50,7 @@
             </CollectionView>
 
             <Label Text="Eventos Especiales" 
-                   TextColor="{DynamicResource BackgroundMain}" 
+                   TextColor="{DynamicResource AccentColor}" 
                    FontAttributes="Bold" 
                    FontSize="20" 
                    Margin="0,10,0,0"/>
@@ -85,7 +83,7 @@
                                            FontAttributes="Bold" 
                                            FontSize="16"/>
                                     <Label Text="{Binding Anio}" 
-                                           TextColor="{DynamicResource BackgroundMain}" 
+                                           TextColor="{DynamicResource AccentColor}" 
                                            FontSize="14"/>
                                 </VerticalStackLayout>
                             </Grid>

@@ -11,11 +11,14 @@
         {
             if (e.Value)
             {
-                Shell.Current.Resources["PrimaryColor"] = Color.FromHex("#00d2ff");
+                Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#90d5ff");
+                Shell.Current.Resources["Text"] = Colors.Black;
                 return;
             }
 
-            Shell.Current.Resources["PrimaryColor"] = Color.FromHex("#1a2634");
+            Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#1a2634");
+            Shell.Current.Resources["Text"] = Colors.White;
+
             return;
         }
     }

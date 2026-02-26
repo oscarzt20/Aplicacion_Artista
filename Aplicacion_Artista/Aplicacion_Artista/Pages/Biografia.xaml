@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Biografia"
              Title="Biografía"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundMain}">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25">
@@ -22,13 +22,11 @@
                 </Border>
 
                 <Label Text="Ado (アド)"
-                       TextColor="White"
-                       FontSize="32"
-                       FontAttributes="Bold"
+                       Style="{DynamicResource AccentColor}"
                        HorizontalTextAlignment="Center"/>
 
                 <Label Text="La voz de la nueva era"
-                       TextColor="{DynamicResource BackgroundMain}"
+                       TextColor="{DynamicResource AccentColor}"
                        FontSize="16"
                        HorizontalTextAlignment="Center"
                        FontAttributes="Italic"/>
@@ -40,22 +38,22 @@
                     Padding="15">
                 <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *" RowSpacing="10">
                     <VerticalStackLayout Grid.Row="0" Grid.Column="0">
-                        <Label Text="Debut" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
+                        <Label Text="Debut" TextColor="{DynamicResource AccentColor}" FontSize="12"/>
                         <Label Text="2020" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="0" Grid.Column="1">
-                        <Label Text="Origen" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
+                        <Label Text="Origen" TextColor="{DynamicResource AccentColor}" FontSize="12"/>
                         <Label Text="Tokio, Japón" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="1" Grid.Column="0">
-                        <Label Text="Género" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
+                        <Label Text="Género" TextColor="{DynamicResource AccentColor}" FontSize="12"/>
                         <Label Text="J-Pop / Rock" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="1" Grid.Column="1">
-                        <Label Text="Sello" TextColor="{DynamicResource BackgroundMain}" FontSize="12"/>
+                        <Label Text="Sello" TextColor="{DynamicResource AccentColor}" FontSize="12"/>
                         <Label Text="Virgin Music" TextColor="White" FontSize="16" FontAttributes="Bold"/>
                     </VerticalStackLayout>
                 </Grid>

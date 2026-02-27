@@ -4,7 +4,7 @@
 
     <!-- Colores -->
     <Color x:Key="BackgroundMain">#1a2634</Color>
-    <Color x:Key=" ">#00d2ff</Color>
+    <Color x:Key="AccentColor">#00d2ff</Color>
     <Color x:Key="SecondaryBackgorund">#283d4f</Color>
     <Color x:Key="Text">White</Color>
 

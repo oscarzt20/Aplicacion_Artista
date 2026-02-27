@@ -61,7 +61,7 @@
                                            Style="{DynamicResource SubtitleStyle}" />
 
                                     <Label Text="Álbum de estudio" 
-                                       TextColor="{StaticResource Text}" 
+                                       TextColor="{DynamicResource Text}" 
                                        FontSize="13" />
 
                                     <Label Text="Ver detalles →" 

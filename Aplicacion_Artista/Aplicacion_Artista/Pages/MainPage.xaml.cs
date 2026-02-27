@@ -14,7 +14,7 @@
                 Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#90d5ff");
                 Shell.Current.Resources["Text"] = Colors.Black;
                 Shell.Current.Resources["AccentColor"] = Colors.Black;
-                Shell.Current.Resources["SecondaryBackgorund"] = Color.FromHex("#d7c2b0");
+                Shell.Current.Resources["SecondaryBackgorund"] = Color.FromHex("#b0d7d7");
 
                 return;
             }

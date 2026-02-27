@@ -17,8 +17,8 @@
             
                 <Switch Grid.Row="0"
                     HorizontalOptions="End"
-                    OnColor="{DynamicResource AccentColor}"
-                    OffColor="{DynamicResource AccentColor}"
+                    OnColor="#00d2ff"
+                    OffColor="#1a2634"
                     Toggled="OnToggledChanged"
                     VerticalOptions="End" />
 
@@ -44,7 +44,7 @@
                                      Spacing="5">
 
                         <Label Text="ARTISTA" 
-                           TextColor="{DynamicResource BackgroundMain}" 
+                           TextColor="White" 
                            FontSize="14" 
                            FontAttributes="Bold" 
                            CharacterSpacing="3"/>

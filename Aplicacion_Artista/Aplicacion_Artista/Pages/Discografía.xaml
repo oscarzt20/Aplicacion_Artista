@@ -4,7 +4,7 @@
              x:Class="Aplicacion_Artista.Pages.Discografía"
              Title="Discografía"
              BackgroundColor="{DynamicResource BackgroundMain}">
-    <Grid RowSpacing="0" Padding="20" BackgroundColor="{DynamicResource PrimaryColor}">
+    <Grid RowSpacing="0" Padding="20" BackgroundColor="{DynamicResource BackgroundMain}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -12,7 +12,8 @@
 
         <VerticalStackLayout Grid.Row="0" Margin="0,0,0,20">
             <Label Text="DISCOGRAFÍA" 
-                   Style="{DynamicResource AccentColor}"/>
+                   Style="{DynamicResource TitleStyle}"
+                   HorizontalOptions="Center"/>
             <BoxView HeightRequest="3" 
                  WidthRequest="500" 
                  Color="{DynamicResource AccentColor}" 
@@ -33,7 +34,7 @@
                         <Border Margin="0,8"
                             Padding="0"
                             StrokeThickness="0"
-                            BackgroundColor="#283d4f"
+                            BackgroundColor="{DynamicResource SecondaryBackgorund}"
                             StrokeShape="RoundRectangle 15">
 
                             <Border.Shadow>
@@ -57,18 +58,14 @@
                                                  Spacing="5">
 
                                     <Label Text="{Binding NombreAlbum}" 
-                                       TextColor="White" 
-                                       FontSize="18" 
-                                       FontAttributes="Bold"
-                                       MaxLines="1"
-                                       LineBreakMode="TailTruncation" />
+                                           Style="{DynamicResource SubtitleStyle}" />
 
                                     <Label Text="Álbum de estudio" 
-                                       TextColor="#a0a0a0" 
+                                       TextColor="{StaticResource Text}" 
                                        FontSize="13" />
 
                                     <Label Text="Ver detalles →" 
-                                       TextColor="#00d2ff" 
+                                       TextColor="{DynamicResource AccentColor}" 
                                        FontSize="14" 
                                        FontAttributes="Bold"
                                        Margin="0,5,0,0" />

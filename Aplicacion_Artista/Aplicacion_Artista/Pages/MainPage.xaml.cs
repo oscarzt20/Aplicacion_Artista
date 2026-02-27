@@ -13,6 +13,7 @@
             {
                 Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#90d5ff");
                 Shell.Current.Resources["Text"] = Colors.Black;
+
                 return;
             }
 

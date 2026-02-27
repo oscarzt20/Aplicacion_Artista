@@ -23,7 +23,7 @@
                     <DataTemplate x:DataType="models:Evento">
                         <Border StrokeShape="RoundRectangle 12" 
                                 StrokeThickness="2" 
-                                BackgroundColor="#16213e" 
+                                BackgroundColor="{DynamicResource SecondaryBackgorund}" 
                                 Padding="10">
                             <Grid ColumnDefinitions="110, *">
                                 <Image Grid.Column="0" 
@@ -62,7 +62,7 @@
                     <DataTemplate x:DataType="models:Evento">
                         <Border StrokeShape="RoundRectangle 12" 
                                 StrokeThickness="2" 
-                                BackgroundColor="#16213e" 
+                                BackgroundColor="{DynamicResource SecondaryBackgorund}" 
                                 Padding="10">
                             <Grid ColumnDefinitions="110, *">
                                 <Image Grid.Column="0" 

@@ -19,9 +19,7 @@
 
             <VerticalStackLayout Spacing="5">
                 <Label Text="{Binding Nombre}" 
-                       TextColor="White" 
-                       FontSize="26" 
-                       FontAttributes="Bold" 
+                       Style="{DynamicResource TitleStyle}"
                        HorizontalOptions="Center" 
                        HorizontalTextAlignment="Center"/>
 
@@ -39,8 +37,7 @@
                    FontAttributes="Bold"/>
 
             <Label Text="{Binding Descripcion}" 
-                   TextColor="#e0e0e0" 
-                   FontSize="16" 
+                   Style="{DynamicResource TextStyle}" 
                    LineHeight="1.2" />
         </VerticalStackLayout>
     </ScrollView>

@@ -36,11 +36,9 @@
                                                      VerticalOptions="Center" 
                                                      Spacing="5">
                                     <Label Text="{Binding Nombre}" 
-                                           Style="{DynamicResource SubtitleStyle}"
-                                           TextColor="white"/>
+                                           Style="{DynamicResource SubtitleStyle}"/>
                                     <Label Text="{Binding Anio}" 
-                                           Style="{DynamicResource TextStyle}"
-                                           TextColor="#00d2ff"/>
+                                           Style="{DynamicResource TextStyle}"/>
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>
@@ -75,11 +73,9 @@
                                                      VerticalOptions="Center" 
                                                      Spacing="5">
                                     <Label Text="{Binding Nombre}" 
-                                           Style="{DynamicResource SubtitleStyle}"
-                                           TextColor="white"/>
+                                           Style="{DynamicResource SubtitleStyle}"/>
                                     <Label Text="{Binding Anio}" 
-                                           Style="{DynamicResource TextStyle}"
-                                           TextColor="#00d2ff"/>
+                                           Style="{DynamicResource TextStyle}"/>
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>

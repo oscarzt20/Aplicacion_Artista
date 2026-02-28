@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.DiscografiaDetail"
              Title="DiscografiaDetail"
-             BackgroundColor="#1a1a2e">
+             BackgroundColor="{DynamicResource BackgroundMain}">
     <VerticalStackLayout Spacing="20" Padding="20">
 
         <Border StrokeShape="RoundRectangle 15" 
@@ -17,27 +17,21 @@
 
         <VerticalStackLayout Spacing="5">
             <Label x:Name="albumLabel" 
-               TextColor="White" 
-               FontSize="26" 
-               FontAttributes="Bold" 
-               HorizontalOptions="Center" 
-               HorizontalTextAlignment="Center"/>
+               Style="{DynamicResource TitleStyle}"
+               HorizontalOptions="Center"/>
 
             <Label x:Name="añoLabel" 
-               TextColor="#00d2ff" 
-               FontSize="18" 
+               Style="{DynamicResource SubtitleStyle}"
                HorizontalOptions="Center" />
         </VerticalStackLayout>
 
         <BoxView HeightRequest="1" Color="#3b5266" Margin="0,10" />
 
         <Label Text="Detalle:" 
-           TextColor="#00d2ff" 
-           FontSize="18" 
-           FontAttributes="Bold"/>
+          Style="{DynamicResource SubtitleStyle}"/>
 
         <Label x:Name="descripcionLabel" 
-           TextColor="#e0e0e0" 
+           TextColor="{DynamicResource Text}" 
            FontSize="16" 
            LineHeight="1.2" />
 

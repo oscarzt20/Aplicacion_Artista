@@ -4,15 +4,13 @@
              xmlns:models="clr-namespace:Aplicacion_Artista.Models"
              x:Class="Aplicacion_Artista.Pages.Eventos"
              Title="Giras y Presentaciones"
-             BackgroundColor="#1a1a2e">
+             BackgroundColor="{DynamicResource BackgroundMain}">
 
     <ScrollView>
         <VerticalStackLayout Padding="15" Spacing="20">
 
             <Label Text="Tours Mundiales" 
-                   TextColor="#00d2ff" 
-                   FontAttributes="Bold" 
-                   FontSize="20" />
+                   Style="{DynamicResource TitleStyle}"/>
 
             <CollectionView x:Name="ListaTours"
                             SelectionMode="Single"
@@ -25,7 +23,7 @@
                     <DataTemplate x:DataType="models:Evento">
                         <Border StrokeShape="RoundRectangle 12" 
                                 StrokeThickness="2" 
-                                BackgroundColor="#16213e" 
+                                BackgroundColor="{DynamicResource SecondaryBackgorund}" 
                                 Padding="10">
                             <Grid ColumnDefinitions="110, *">
                                 <Image Grid.Column="0" 
@@ -38,12 +36,9 @@
                                                      VerticalOptions="Center" 
                                                      Spacing="5">
                                     <Label Text="{Binding Nombre}" 
-                                           TextColor="White" 
-                                           FontAttributes="Bold" 
-                                           FontSize="16"/>
+                                           Style="{DynamicResource SubtitleStyle}"/>
                                     <Label Text="{Binding Anio}" 
-                                           TextColor="#00d2ff" 
-                                           FontSize="14"/>
+                                           Style="{DynamicResource TextStyle}"/>
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>
@@ -52,10 +47,7 @@
             </CollectionView>
 
             <Label Text="Eventos Especiales" 
-                   TextColor="#00d2ff" 
-                   FontAttributes="Bold" 
-                   FontSize="20" 
-                   Margin="0,10,0,0"/>
+                   Style="{DynamicResource TitleStyle}"/>
 
             <CollectionView x:Name="ListaEventos"
                             SelectionMode="Single"
@@ -68,7 +60,7 @@
                     <DataTemplate x:DataType="models:Evento">
                         <Border StrokeShape="RoundRectangle 12" 
                                 StrokeThickness="2" 
-                                BackgroundColor="#16213e" 
+                                BackgroundColor="{DynamicResource SecondaryBackgorund}" 
                                 Padding="10">
                             <Grid ColumnDefinitions="110, *">
                                 <Image Grid.Column="0" 
@@ -81,12 +73,9 @@
                                                      VerticalOptions="Center" 
                                                      Spacing="5">
                                     <Label Text="{Binding Nombre}" 
-                                           TextColor="White" 
-                                           FontAttributes="Bold" 
-                                           FontSize="16"/>
+                                           Style="{DynamicResource SubtitleStyle}"/>
                                     <Label Text="{Binding Anio}" 
-                                           TextColor="#00d2ff" 
-                                           FontSize="14"/>
+                                           Style="{DynamicResource TextStyle}"/>
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>

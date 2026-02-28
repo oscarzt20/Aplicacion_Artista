@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.Discografía"
              Title="Discografía"
-             BackgroundColor="#1a2634">
-    <Grid RowSpacing="0" Padding="20" BackgroundColor="#1a2634">
+             BackgroundColor="{DynamicResource BackgroundMain}">
+    <Grid RowSpacing="0" Padding="20" BackgroundColor="{DynamicResource BackgroundMain}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -12,14 +12,11 @@
 
         <VerticalStackLayout Grid.Row="0" Margin="0,0,0,20">
             <Label Text="DISCOGRAFÍA" 
-               TextColor="#00d2ff" 
-               FontSize="24" 
-               FontAttributes="Bold" 
-               CharacterSpacing="2" 
-               HorizontalOptions="Center"/>
+                   Style="{DynamicResource TitleStyle}"
+                   HorizontalOptions="Center"/>
             <BoxView HeightRequest="3" 
                  WidthRequest="500" 
-                 Color="#00d2ff" 
+                 Color="{DynamicResource AccentColor}" 
                  HorizontalOptions="Center" 
                  Margin="2,5,0,0"/>
         </VerticalStackLayout>
@@ -37,7 +34,7 @@
                         <Border Margin="0,8"
                             Padding="0"
                             StrokeThickness="0"
-                            BackgroundColor="#283d4f"
+                            BackgroundColor="{DynamicResource SecondaryBackgorund}"
                             StrokeShape="RoundRectangle 15">
 
                             <Border.Shadow>
@@ -61,18 +58,14 @@
                                                  Spacing="5">
 
                                     <Label Text="{Binding NombreAlbum}" 
-                                       TextColor="White" 
-                                       FontSize="18" 
-                                       FontAttributes="Bold"
-                                       MaxLines="1"
-                                       LineBreakMode="TailTruncation" />
+                                           Style="{DynamicResource SubtitleStyle}" />
 
                                     <Label Text="Álbum de estudio" 
-                                       TextColor="#a0a0a0" 
+                                       TextColor="{DynamicResource Text}" 
                                        FontSize="13" />
 
                                     <Label Text="Ver detalles →" 
-                                       TextColor="#00d2ff" 
+                                       TextColor="{DynamicResource AccentColor}" 
                                        FontSize="14" 
                                        FontAttributes="Bold"
                                        Margin="0,5,0,0" />

@@ -2,18 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion_Artista.Pages.MainPage"
-             BackgroundColor="#1a2634">
+             BackgroundColor="{DynamicResource BackgroundMain}">
 
-    <ScrollView BackgroundColor="#1a2634">
+    <ScrollView BackgroundColor="{DynamicResource BackgroundMain}">
         <Grid RowSpacing="20"
           ColumnSpacing="15"
           Padding="20">
 
             <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Border Grid.Row="0"
+            
+                <Switch Grid.Row="0"
+                    HorizontalOptions="End"
+                    OnColor="#00d2ff"
+                    OffColor="#1a2634"
+                    Toggled="OnToggledChanged"
+                    VerticalOptions="End" />
+
+            <Border Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 StrokeThickness="0"
@@ -35,7 +44,7 @@
                                      Spacing="5">
 
                         <Label Text="ARTISTA" 
-                           TextColor="#00d2ff" 
+                           TextColor="White" 
                            FontSize="14" 
                            FontAttributes="Bold" 
                            CharacterSpacing="3"/>

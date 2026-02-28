@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Colores -->
+    <Color x:Key="BackgroundMain">#1a2634</Color>
+    <Color x:Key="AccentColor">#00d2ff</Color>
+    <Color x:Key="SecondaryBackgorund">#283d4f</Color>
+    <Color x:Key="Text">White</Color>
+
+    <!-- Tamaños -->
+    <x:Double x:Key="TitleSize">24</x:Double>
+    <x:Double x:Key="SubtitleSize">18</x:Double>
+    <x:Double x:Key="TextSize">16</x:Double>
+
+
+    <!-- Estilo reutilizable -->
+    <Style x:Key="TitleStyle"
+               TargetType="Label">
+        <Setter Property="TextColor"
+                    Value="{DynamicResource Text}" />
+        <Setter Property="FontSize"
+                    Value="{StaticResource TitleSize}" />
+        <Setter Property="FontAttributes"
+                    Value="Bold" />
+        <Setter Property="MaxLines"
+                    Value="1" />
+        <Setter Property="LineBreakMode"
+                    Value="TailTruncation"/>
+    </Style>
+
+    <Style x:Key="SubtitleStyle"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{DynamicResource AccentColor}" />
+        <Setter Property="FontSize"
+                Value="{StaticResource SubtitleSize}" />
+        <Setter Property="FontAttributes"
+                Value="Bold" />
+        <Setter Property="MaxLines"
+                Value="1" />
+        <Setter Property="LineBreakMode"
+                Value="TailTruncation" />
+    </Style>
+
+    <Style x:Key="TextStyle"
+       TargetType="Label">
+        <Setter Property="TextColor"
+            Value="{DynamicResource Text}" />
+        <Setter Property="FontSize"
+            Value="{StaticResource TextSize}" />
+        <Setter Property="FontAttributes"
+            Value="None" /> 
+    </Style>
+
+
+</ResourceDictionary>
